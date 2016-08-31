@@ -15,6 +15,9 @@
 		D76168FF1D7529CB00F2C971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76168FD1D7529CB00F2C971 /* LaunchScreen.storyboard */; };
 		D761690A1D7529CB00F2C971 /* ZCJTableViewDataSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D76169091D7529CB00F2C971 /* ZCJTableViewDataSetTests.m */; };
 		D76169151D7529CB00F2C971 /* ZCJTableViewDataSetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D76169141D7529CB00F2C971 /* ZCJTableViewDataSetUITests.m */; };
+		D76169251D752A2F00F2C971 /* ZCJTableDataSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D76169241D752A2F00F2C971 /* ZCJTableDataSetView.m */; };
+		D76169281D755E2B00F2C971 /* UITableView+DataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D76169271D755E2B00F2C971 /* UITableView+DataSet.m */; };
+		D761692B1D75808C00F2C971 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D761692A1D75808C00F2C971 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		D76169101D7529CB00F2C971 /* ZCJTableViewDataSetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCJTableViewDataSetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76169141D7529CB00F2C971 /* ZCJTableViewDataSetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCJTableViewDataSetUITests.m; sourceTree = "<group>"; };
 		D76169161D7529CB00F2C971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76169231D752A2F00F2C971 /* ZCJTableDataSetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCJTableDataSetView.h; sourceTree = "<group>"; };
+		D76169241D752A2F00F2C971 /* ZCJTableDataSetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCJTableDataSetView.m; sourceTree = "<group>"; };
+		D76169261D755E2B00F2C971 /* UITableView+DataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DataSet.h"; sourceTree = "<group>"; };
+		D76169271D755E2B00F2C971 /* UITableView+DataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DataSet.m"; sourceTree = "<group>"; };
+		D76169291D75808C00F2C971 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D761692A1D75808C00F2C971 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,13 @@
 		D76168EE1D7529CB00F2C971 /* ZCJTableViewDataSet */ = {
 			isa = PBXGroup;
 			children = (
+				D76169221D7529E300F2C971 /* ZCJTableViewDataSet */,
 				D76168F21D7529CB00F2C971 /* AppDelegate.h */,
 				D76168F31D7529CB00F2C971 /* AppDelegate.m */,
 				D76168F51D7529CB00F2C971 /* ViewController.h */,
 				D76168F61D7529CB00F2C971 /* ViewController.m */,
+				D76169291D75808C00F2C971 /* TableViewController.h */,
+				D761692A1D75808C00F2C971 /* TableViewController.m */,
 				D76168F81D7529CB00F2C971 /* Main.storyboard */,
 				D76168FB1D7529CB00F2C971 /* Assets.xcassets */,
 				D76168FD1D7529CB00F2C971 /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				D76169161D7529CB00F2C971 /* Info.plist */,
 			);
 			path = ZCJTableViewDataSetUITests;
+			sourceTree = "<group>";
+		};
+		D76169221D7529E300F2C971 /* ZCJTableViewDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				D76169231D752A2F00F2C971 /* ZCJTableDataSetView.h */,
+				D76169241D752A2F00F2C971 /* ZCJTableDataSetView.m */,
+				D76169261D755E2B00F2C971 /* UITableView+DataSet.h */,
+				D76169271D755E2B00F2C971 /* UITableView+DataSet.m */,
+			);
+			path = ZCJTableViewDataSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76169251D752A2F00F2C971 /* ZCJTableDataSetView.m in Sources */,
+				D761692B1D75808C00F2C971 /* TableViewController.m in Sources */,
 				D76168F71D7529CB00F2C971 /* ViewController.m in Sources */,
 				D76168F41D7529CB00F2C971 /* AppDelegate.m in Sources */,
 				D76168F11D7529CB00F2C971 /* main.m in Sources */,
+				D76169281D755E2B00F2C971 /* UITableView+DataSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

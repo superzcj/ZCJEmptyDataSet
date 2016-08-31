@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZCJTableDataSetView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    ZCJTableDataSetView *dsView = [[ZCJTableDataSetView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    dsView.titleLbl.attributedText = [[NSAttributedString alloc] initWithString:@"我是标题"];
+    dsView.detailLbl.attributedText = [[NSAttributedString alloc] initWithString:@"我是详情"];
+    [self.view addSubview:dsView];
 }
 
 - (void)didReceiveMemoryWarning {
